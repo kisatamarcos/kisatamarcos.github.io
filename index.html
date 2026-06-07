@@ -70,7 +70,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,240,232,
 .planos-inner{max-width:1100px;margin:0 auto}
 .planos-header{margin-bottom:56px}
 .planos-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
-.plan-card{background:var(--cream);border-radius:12px;overflow:hidden;border:.5px solid rgba(61,74,46,.12);box-shadow:0 2px 20px rgba(30,35,24,.06);display:flex;flex-direction:column;position:relative;transition:transform .2s,box-shadow .2s}
+.plan-card{background:#FAFAF7;border-radius:12px;overflow:hidden;border:.5px solid rgba(61,74,46,.10);box-shadow:0 2px 16px rgba(30,35,24,.05);display:flex;flex-direction:column;position:relative;transition:transform .2s,box-shadow .2s}
 .plan-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(30,35,24,.10)}
 .plan-card.featured{border:2px solid var(--olive-mid);box-shadow:0 4px 28px rgba(30,35,24,.12)}
 .plan-stripe{height:4px;background:var(--olive-pale)}
@@ -94,12 +94,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,240,232,
 .plan-ideal-item{display:flex;align-items:flex-start;gap:7px;font-size:13px;color:var(--text-mid);line-height:1.4;font-weight:300;margin-bottom:4px}
 .plan-ideal-item:last-child{margin-bottom:0}
 .plan-ideal-dot{width:4px;height:4px;border-radius:50%;background:var(--olive-light);flex-shrink:0;margin-top:4px}
-.plan-items{flex:1;display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.plan-section-label{font-size:12px;font-weight:600;color:var(--text-dark);margin:18px 0 10px;letter-spacing:.01em}
+.plan-items{display:flex;flex-direction:column;gap:9px;margin-bottom:4px}
 .plan-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text-mid);line-height:1.4;font-weight:300}
-.plan-dot{width:5px;height:5px;border-radius:50%;background:var(--olive-pale);flex-shrink:0;margin-top:5px}
-.plan-card.featured .plan-dot{background:var(--olive-light)}
+.plan-check{color:var(--olive-mid);font-weight:600;font-size:13px;flex-shrink:0;margin-top:0}
 .plan-item b{font-weight:500;color:var(--text-dark)}
-.plan-tagline-bottom{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text-light);font-style:italic;border-top:.5px solid var(--cream-dark);padding-top:12px;margin-top:auto;line-height:1.5}
+.plan-invest{margin-top:18px;padding-top:14px;border-top:.5px solid var(--cream-dark)}
+.plan-invest-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-light);font-weight:500;margin-bottom:2px}
+.plan-invest-val{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:400;color:var(--text-mid);line-height:1;margin-bottom:2px}
+.plan-tagline-bottom{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;color:var(--olive);font-style:italic;margin-top:14px;line-height:1.5;padding-top:12px;border-top:.5px solid var(--olive-pale)}
 .plan-cta{display:block;text-align:center;background:var(--olive);color:var(--white);text-decoration:none;padding:14px;font-size:13px;font-weight:500;letter-spacing:.06em;transition:background .2s}
 .plan-cta:hover{background:var(--olive-mid)}
 .planos-footer{margin-top:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:.5px solid var(--cream-dark)}
@@ -159,7 +162,6 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
     <li><a href="#como-funciona">Como funciona</a></li>
     <li><a href="#planos">Planos</a></li>
     <li><a href="#faq">Dúvidas</a></li>
-    <li><a href="https://wa.me/5554999998952?text=Ol%C3%A1%2C+Marcos.+Vi+seus+planos+e+quero+saber+mais." target="_blank" class="nav-cta">Agendar conversa</a></li>
   </ul>
 </nav>
 
@@ -179,11 +181,7 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
 <section class="sobre-section" id="sobre">
   <div class="sobre-inner">
     <div class="sobre-foto">
-      <!-- Substituir pelo caminho da sua foto quando tiver: <img src="foto.jpg" alt="Marcos Kisata"> -->
-      <div class="sobre-foto-placeholder">
-        📷<br><br>Foto a adicionar<br><br>
-        <span style="font-size:11px;opacity:.6">Substituir esta div por:<br>&lt;img src="sua-foto.jpg"&gt;</span>
-      </div>
+      <img src="foto_marcos.jpg" alt="Marcos Kisata — Nutricionista">
     </div>
     <div class="sobre-texto">
       <span class="section-label">Quem está por trás do acompanhamento</span>
@@ -243,7 +241,7 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
     <div class="planos-header">
       <span class="section-label">Acompanhamento nutricional</span>
       <h2 class="section-title">Escolha o plano <em>certo</em><br>para o seu momento</h2>
-      <p class="section-sub" style="font-size:15px;color:var(--text-light);font-weight:300;line-height:1.7">Três modalidades de acompanhamento. Vagas limitadas.</p>
+      <p class="section-sub" style="font-size:15px;color:var(--text-light);font-weight:300;line-height:1.7">Três modalidades de acompanhamento. Número reduzido de pacientes acompanhados simultaneamente.</p>
     </div>
 
     <div class="planos-grid">
@@ -254,28 +252,31 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
         <div class="plan-body">
           <div class="plan-label">Plano</div>
           <div class="plan-name">Essencial</div>
-          <div class="plan-tagline-top">Para sair da desorganização alimentar e ter um plano claro para começar.</div>
+          <div class="plan-tagline-top">Para organizar sua alimentação e ter um plano claro para começar.</div>
           <div class="plan-dur">30 dias de acompanhamento</div>
-          <div class="plan-price-block">
-            <div class="plan-price-normal">R$ 280,00</div>
-            <div class="plan-price-tag">Lançamento</div>
-            <div class="plan-price-val"><small>R$&thinsp;</small>220,00</div>
-            <div class="plan-price-note">Pix à vista · Parcelamento disponível</div>
-          </div>
           <div class="plan-ideal">
             <div class="plan-ideal-label">Ideal para quem:</div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Não tem rotina alimentar estruturada</div></div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Busca organizar a alimentação de forma prática</div></div>
-            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Precisa de um plano simples e aplicável no dia a dia</div></div>
+            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Precisa de um plano simples e aplicável</div></div>
           </div>
+          <div class="plan-section-label">O que está incluso:</div>
           <div class="plan-items">
-            <div class="plan-item"><div class="plan-dot"></div><div><b>1 consulta inicial</b> completa + plano alimentar personalizado</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div><b>1 retorno</b> de acompanhamento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Check-ins semanais de monitoramento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Suporte via WhatsApp em dias úteis</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Plano de ação alimentar para dias fora da rotina</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Consulta inicial completa</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano alimentar personalizado</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>1 retorno de acompanhamento</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Check-ins semanais</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Suporte via WhatsApp em dias úteis</div></div>
           </div>
-          <div class="plan-tagline-bottom">Direcionamento claro é a estratégia para começar certo e criar uma rotina alimentar sustentável.</div>
+          <div class="plan-section-label">Materiais adicionais:</div>
+          <div class="plan-items">
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano de ação alimentar para dias fora da rotina</div></div>
+          </div>
+          <div class="plan-invest">
+            <div class="plan-invest-label">Investimento</div>
+            <div class="plan-invest-val">de R$220,00</div>
+          </div>
+          <div class="plan-tagline-bottom">Direcionamento claro é a estratégia para criar uma rotina alimentar sustentável.</div>
         </div>
         <a href="https://wa.me/5554999998952?text=Ol%C3%A1%2C+Marcos.+Tenho+interesse+no+Plano+Essencial." target="_blank" class="plan-cta">Quero este plano</a>
       </div>
@@ -289,27 +290,29 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
           <div class="plan-name">Transformação</div>
           <div class="plan-tagline-top">Para evoluir com consistência e ajustes contínuos.</div>
           <div class="plan-dur">90 dias de acompanhamento</div>
-          <div class="plan-price-block">
-            <div class="plan-price-normal">R$ 690,00</div>
-            <div class="plan-price-tag">Lançamento</div>
-            <div class="plan-price-val"><small>R$&thinsp;</small>530,00</div>
-            <div class="plan-price-note">Pix à vista · Parcelamento disponível</div>
-          </div>
           <div class="plan-ideal">
             <div class="plan-ideal-label">Ideal para quem:</div>
-            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Tem dificuldade em manter consistência</div></div>
+            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Tem dificuldade em manter constância</div></div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Oscila entre períodos de controle e desorganização</div></div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Precisa de ajustes ao longo do processo</div></div>
           </div>
+          <div class="plan-section-label">O que está incluso:</div>
           <div class="plan-items">
-            <div class="plan-item"><div class="plan-dot"></div><div><b>1 consulta inicial</b> completa</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div><b>3 retornos mensais</b> de acompanhamento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Plano alimentar personalizado e <b>revisado mensalmente</b></div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Check-ins semanais de monitoramento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Suporte via WhatsApp em dias úteis</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Plano de ação alimentar para dias fora da rotina</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Guia alimentar estruturado (7 dias com opções de refeições)</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Lâminas de substituições alimentares</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Consulta inicial completa</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano alimentar personalizado e revisado mensalmente</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>3 retornos ao longo dos 90 dias</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Check-ins semanais</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Suporte via WhatsApp em dias úteis</div></div>
+          </div>
+          <div class="plan-section-label">Materiais adicionais:</div>
+          <div class="plan-items">
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano de ação alimentar para dias fora da rotina</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Guia alimentar estruturado (7 dias com opções de refeições)</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Lâminas de substituições alimentares</div></div>
+          </div>
+          <div class="plan-invest">
+            <div class="plan-invest-label">Investimento</div>
+            <div class="plan-invest-val">de R$560,00</div>
           </div>
           <div class="plan-tagline-bottom">Plano sem acompanhamento é tentativa. Com acompanhamento, vira estratégia.</div>
         </div>
@@ -319,35 +322,37 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
       <!-- PREMIUM -->
       <div class="plan-card">
         <div class="plan-stripe"></div>
-        <div class="plan-badge" style="display:block">Maior suporte</div>
+        <div class="plan-badge" style="display:block">Ajustes mais frequentes</div>
         <div class="plan-body">
           <div class="plan-label">Plano</div>
           <div class="plan-name">Premium</div>
-          <div class="plan-tagline-top">Para maximizar resultados com controle e ajustes mais frequentes.</div>
+          <div class="plan-tagline-top">Para maximizar resultados com acompanhamento mais próximo.</div>
           <div class="plan-dur">90 dias de acompanhamento</div>
-          <div class="plan-price-block">
-            <div class="plan-price-normal">R$ 860,00</div>
-            <div class="plan-price-tag">Lançamento</div>
-            <div class="plan-price-val"><small>R$&thinsp;</small>670,00</div>
-            <div class="plan-price-note">Pix à vista · Parcelamento disponível</div>
-          </div>
           <div class="plan-ideal">
             <div class="plan-ideal-label">Ideal para quem:</div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Precisa de acompanhamento próximo e frequente</div></div>
             <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Tem rotina variável ou imprevisível</div></div>
-            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Busca ajustes rápidos para otimizar resultados</div></div>
+            <div class="plan-ideal-item"><div class="plan-ideal-dot"></div><div>Busca ajustes rápidos ao longo do processo</div></div>
           </div>
+          <div class="plan-section-label">O que está incluso:</div>
           <div class="plan-items">
-            <div class="plan-item"><div class="plan-dot"></div><div><b>1 consulta inicial</b> completa</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div><b>6 retornos quinzenais</b> de acompanhamento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Plano alimentar personalizado e <b>revisado a cada retorno</b></div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Check-ins semanais de monitoramento</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Suporte via WhatsApp <b>estendido</b></div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Plano de ação alimentar para dias fora da rotina</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Guia alimentar estruturado (7 dias com opções de refeições)</div></div>
-            <div class="plan-item"><div class="plan-dot"></div><div>Lâminas de substituições alimentares</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Consulta inicial completa</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano alimentar personalizado e revisado a cada retorno</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Retornos quinzenais ao longo de 90 dias</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Check-ins semanais</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Suporte via WhatsApp prioritário todos os dias</div></div>
           </div>
-          <div class="plan-tagline-bottom">Quanto mais próximo o acompanhamento, maior o controle do processo. É isso que gera resultado.</div>
+          <div class="plan-section-label">Materiais adicionais:</div>
+          <div class="plan-items">
+            <div class="plan-item"><span class="plan-check">✓</span><div>Plano de ação alimentar para dias fora da rotina</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Guia alimentar estruturado (7 dias com opções de refeições)</div></div>
+            <div class="plan-item"><span class="plan-check">✓</span><div>Lâminas de substituições alimentares</div></div>
+          </div>
+          <div class="plan-invest">
+            <div class="plan-invest-label">Investimento</div>
+            <div class="plan-invest-val">de R$760,00</div>
+          </div>
+          <div class="plan-tagline-bottom">Quanto mais próximo o acompanhamento, maior o controle do processo.</div>
         </div>
         <a href="https://wa.me/5554999998952?text=Ol%C3%A1%2C+Marcos.+Tenho+interesse+no+Plano+Premium." target="_blank" class="plan-cta">Quero este plano</a>
       </div>
@@ -355,7 +360,7 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
     </div>
 
     <div class="planos-footer">
-      <div class="planos-vagas">⚡ Vagas limitadas para acompanhamento</div>
+      <div class="planos-vagas">Número reduzido de pacientes acompanhados simultaneamente</div>
       <div class="planos-info">Atendimento online via Google Meet · Presencial em Bento Gonçalves (RS) sob consulta<br>Pix à vista ou parcelado pelo Mercado Pago</div>
     </div>
   </div>
