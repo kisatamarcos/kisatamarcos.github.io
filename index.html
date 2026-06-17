@@ -384,9 +384,8 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
 
 <!-- ========== SEÇÃO: GUIA PRÁTICO ========== -->
 <section id="guia" style="background: #f9f7f4; padding: 80px 24px;">
-  <div style="max-width: 860px; margin: 0 auto;">
+  <div style="max-width: 960px; margin: 0 auto;">
 
-    <!-- Eyebrow + título -->
     <p style="
       text-align: center;
       font-size: 0.78rem;
@@ -424,80 +423,79 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
       box-shadow: 0 4px 24px rgba(0,0,0,0.07);
       display: flex;
       flex-wrap: wrap;
+      min-height: 420px;
     ">
 
-      <!-- Coluna esquerda — destaque verde -->
+      <!-- Coluna 1 — foto da capa (maior) -->
+      <div style="flex: 0 0 300px; min-width: 260px;">
+        <img
+          src="https://kisatamarcos.github.io/Sem%20improviso.jpg"
+          alt="Capa do e-book Sem Improviso"
+          style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block;"
+        />
+      </div>
+
+      <!-- Coluna 2 — destaque verde (menor) -->
       <div style="
         background: #2E5E3E;
         color: #fff;
-        padding: 40px 36px;
-        flex: 1 1 280px;
+        padding: 36px 24px;
+        flex: 0 0 160px;
+        min-width: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-width: 260px;
       ">
         <div>
-          <p style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; margin-bottom: 8px;">E-book digital</p>
-          <h3 style="font-size: 1.7rem; font-weight: 800; line-height: 1.2; margin-bottom: 16px;">Sem Improviso</h3>
-          <p style="font-size: 0.95rem; opacity: 0.9; line-height: 1.6; margin-bottom: 32px;">7 dias completos · 3 opções por refeição · 105 receitas com macros calculados</p>
+          <p style="font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; margin-bottom: 8px;">E-book digital</p>
+          <h3 style="font-size: 1.3rem; font-weight: 800; line-height: 1.2; margin-bottom: 14px;">Sem Improviso</h3>
+          <p style="font-size: 0.82rem; opacity: 0.9; line-height: 1.6;">7 dias completos · 3 opções por refeição · 105 receitas com macros calculados</p>
         </div>
-        <div>
-          <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 4px;">Investimento</p>
-          <p style="font-size: 2rem; font-weight: 800; margin-bottom: 4px;">R$&nbsp;47,00</p>
-          <p style="font-size: 0.8rem; opacity: 0.7;">Acesso imediato · PDF para download</p>
+        <div style="margin-top: 32px;">
+          <p style="font-size: 0.75rem; opacity: 0.7; margin-bottom: 4px;">Investimento</p>
+          <p style="font-size: 1.7rem; font-weight: 800; margin-bottom: 4px;">R$&nbsp;47</p>
+          <p style="font-size: 0.72rem; opacity: 0.7;">Acesso imediato · PDF</p>
         </div>
       </div>
 
-      <!-- Coluna direita — conteúdo -->
-      <div style="
-        padding: 40px 36px;
-        flex: 2 1 320px;
-        min-width: 280px;
-      ">
+      <!-- Coluna 3 — conteúdo -->
+      <div style="padding: 36px 32px; flex: 2 1 280px; min-width: 260px;">
 
         <p style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #2E5E3E; margin-bottom: 16px;">O que está incluso</p>
 
-        <ul style="list-style: none; padding: 0; margin: 0 0 32px; display: flex; flex-direction: column; gap: 12px;">
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+        <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px;">
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>7 dias completos — café da manhã, lanche, almoço, lanche da tarde e jantar</span>
           </li>
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>3 opções por refeição — 105 receitas no total, sem monotonia</span>
           </li>
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>Preparos base da semana — faça no domingo, resolva a semana toda</span>
           </li>
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>Calorias e macros calculados por porção, ingrediente a ingrediente, com base na tabela TACO</span>
           </li>
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>Tabelas de resumo calórico por dia para montar seu cardápio com consciência</span>
           </li>
-          <li style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: #333; line-height: 1.5;">
-            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0; margin-top: 1px;">✓</span>
+          <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: #333; line-height: 1.5;">
+            <span style="color: #2E5E3E; font-weight: 700; flex-shrink: 0;">✓</span>
             <span>Ingredientes acessíveis — sem receitas complicadas ou itens difíceis de encontrar</span>
           </li>
         </ul>
 
-        <!-- Frase de posicionamento -->
-        <p style="
-          font-size: 0.88rem;
-          color: #777;
-          line-height: 1.6;
-          border-top: 1px solid #f0f0f0;
-          padding-top: 20px;
-          margin-bottom: 28px;
-        ">Criado por <strong style="color: #333;">Marcos Kisata — Nutricionista CRN2 21952D.</strong> Para quem quer um ponto de partida prático antes de iniciar o acompanhamento — ou simplesmente organizar a semana sem depender de improvisos.</p>
+        <p style="font-size: 0.85rem; color: #777; line-height: 1.6; border-top: 1px solid #f0f0f0; padding-top: 18px; margin-bottom: 24px;">
+          Criado por <strong style="color: #333;">Marcos Kisata — Nutricionista CRN2 21952D.</strong> Um ponto de partida prático para organizar sua semana alimentar — com ou sem acompanhamento.
+        </p>
 
-        <!-- Botão CTA -->
         <a
-          href="COLE_AQUI_O_LINK_DO_CHECKOUT_HOTMART"
+          href="https://pay.hotmart.com/P106350341X"
           target="_blank"
           rel="noopener"
           style="
@@ -509,14 +507,13 @@ footer{background:var(--text-dark);padding:40px 5vw;display:flex;align-items:cen
             font-weight: 700;
             padding: 14px 32px;
             border-radius: 8px;
-            transition: background 0.2s;
           "
           onmouseover="this.style.background='#245030'"
           onmouseout="this.style.background='#2E5E3E'"
         >Quero o guia por R$&nbsp;47 →</a>
 
       </div>
-    </div><!-- fim card -->
+    </div>
 
   </div>
 </section>
